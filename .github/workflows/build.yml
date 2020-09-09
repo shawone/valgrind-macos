@@ -81,12 +81,6 @@ jobs:
       run: make
     - name: try ls -l
       run: ./vg-in-place ls -l
-    - name: debug
-      run: make -C none tests/pth_term_signal
-    - name: debug
-      run: ./vg-in-place none/tests/pth_term_signal
-    - name: fail
-      run: false
     - name: build regression tests
       run: make check
     - name: create artifacts folder
